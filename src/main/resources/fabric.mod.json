@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skymod",
+	"version": "${version}",
+	"name": "SkyMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Skyc4tOnFire"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.skyc4t.skymod.SkyMod"
+		],
+		"fabric-datagen": [
+			"net.skyc4t.skymod.SkyModDataGenerator"
+		],
+		"client": [
+			"net.skyc4t.skymod.SkyModClient"
+		]
+	},
+	"mixins": [
+		"skymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
